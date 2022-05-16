@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:shop_app/modules/login/login_screen.dart';
-import 'package:shop_app/modules/on_boarding/on_boarding_screen.dart';
 import 'package:shop_app/network/local/cache_helper.dart';
 import 'package:shop_app/network/remote/dio_helper.dart';
 import 'package:shop_app/shared/constant/constants.dart';
@@ -38,6 +37,6 @@ Widget checkScreen({required onBoarding, required String token}) {
       return LoginScreen();
     }
   } else {
-    return OnBoardingScreen();
+    return LoginScreen();
   }
 }
